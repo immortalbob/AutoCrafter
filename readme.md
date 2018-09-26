@@ -1,6 +1,8 @@
 This Meta will automatically craft many items. Full list below.
 
-A "View" will be created with a "Go" button, this starts the auto-craft process. Specialty items will also have their own button in the "View".
+Simply place AutoCrafter.met in your vtank folder (C:\games\virindi plugins\vtank)
+
+Once loaded, a "View" will be created with a "Go" button, this starts the auto-craft process. Specialty items will also have their own button in the "View".
 
 Starting the auto-craft process will attempt to make every item possible from the list below, if the components are in your inventory. Be aware.
 
