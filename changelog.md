@@ -1,4 +1,19 @@
 Changelog:
+Version 1.6
+- Cleaned up meta by compressing "Make" states by ~25%.
+- Added message upon first load outputting available skills and tools. (1 = available, 0 = unavailable)
+- Added Eye Dropper tool support.
+- Added Shattered Legendary Key to future proof it.
+- Added keyring carving from golem hearts. All keyrings supported. (Must press button in view)
+- Added Health Oil
+- Added Concentrated Health Infusion, and Concentrated Health Oil
+- Added Victual Infusion and Victual Oil.
+- Added Concentrated Victual Infusion, and Concentrated Victual Oil. (Get made, and then broken down into unconcentrated versions if Eye Dropper tool available)
+- Added Mana Oil
+- Added Concentrated Mana Infusion, and Concentrated Mana Oil. (Get made, and then broken down into unconcentrated versions if Eye Dropper tool available)
+- Fixed Make-ChoriziteOil state order.
+- View no longer reloads after each crafting interaction. (pressing go)
+
 Version 1.5
 - Added Thick Diamond Oil (Must press button in "View")
 - Added Perfect Diamond Infused Pyreal Ingot (Must press button in "View")

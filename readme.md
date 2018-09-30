@@ -19,6 +19,14 @@ one last thing, you must turn off the crafting chance of success dialog for this
 /config UseCraftSuccessDialog on
 
 
+What tools it supports:
+Alembic
+Mortar and Pestle
+Eyedropper
+Barbed Fletching Tool
+Chorizite Fletching Tool
+Intricate Carving Tool
+
 What it can make:
 
 Alchemy:
@@ -28,13 +36,17 @@ Concentrated Fire Infusion/Oil
 Concentrated Frost Infusion/Oil
 Concentrated Lightning Infusion/Oil
 Concentrated Acid Infusion/Oil
+Concentrated Mana Infusion/Oil
+Concentrated Victual Infusion/Oil
+Concentrated Health Infusion/Oil
+Mana Infusion/Oil
+Health Infusion/Oil
+Victual Infusion/Oil
 Crushed Dye Plants
 Vials of Dye
 Ground Chorizite
 Chorizite
 Pyreal Ingot (Mag-Tools Required)
-Mana Infusion
-Health Infusion
 Trade Health Elixer
 Trade Mana Elixer
 Condensed Dispel Potion
@@ -69,11 +81,24 @@ Intricate Obsidian Key
 Granite Key
 Marble Key
 Singularity Key
+Shattered Legendary Key
+Shattered Mana Forge Key
 Directive Key
 Master Key
 Broken Black Marrow Key
 Mana Forge Key
 Skeletal Falatacot Key
+Black Coral Keyring
+Black Marrow Keyring
+Burning Sands Keyring
+Directive Keyring
+Granite Keyring
+Marble Keyring
+Master Keyring
+Singularity Keyring
+Skeletal Falatacot Keyring
+Sturdy Iron Keyring
+Sturdy Steel Keyring
 
 No Skill:
 Pyreal Sliver/Nugget/Bar (Mag-Tools Required)
@@ -86,22 +111,10 @@ Possible Future Additions:
 I'm open to suggestions for more...
 
 Alchemy:
-health/mana oils
 alchemy protection gems
 
 No Skill:
 Scintillating Gems (Mag-Tools Required)
 
 Future Stuff thats not available in game yet:
-Burning Sands Golem Heart
-Coral Heart
-Black Coral Heart
-Diamond Heart
-Granite Heart
-Iron Heart
-Platinum Golem Heart
-Pyreal Golem Heart
-Glacial Golem Heart
-Gold Golem Heart
-Infused Blood Golem Heart
 Throwing Phials
