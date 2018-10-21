@@ -1,4 +1,17 @@
 Changelog:
+Version 1.7
+- Now toggles Autostack on/off to speed up crafting (a little)
+- Heavy Grinder tool functionality added
+- Baking Pan tool functionality added
+- Brew Kettle tool functionality added (to be available with TOD patch)
+- Beers added to AutoCrafter view (to be available with TOD patch)
+- Beer crafting is untested at the time of this release
+- Roasted Beans now automatically made if you have a Baking Pan and some Brown Beans
+- Chocolate Liquor now automatically made if you have a Heavy Grinder and some Roasted Beans
+- Ground Ginger now automatically made if you have a Heavy Grinder and some Ginger
+- Hot sauce now automatically made if you have a Mortar and Pestle and some Hot Peppers
+- Cinnamon now automatically made if you have a Mortar and Pestle and some Cinnamon Bark
+
 Version 1.6
 - Cleaned up meta by compressing "Make" states by ~25%.
 - Added message upon first load outputting available skills and tools. (1 = available, 0 = unavailable)

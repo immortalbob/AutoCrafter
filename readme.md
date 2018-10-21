@@ -26,6 +26,9 @@ Eyedropper
 Barbed Fletching Tool
 Chorizite Fletching Tool
 Intricate Carving Tool
+Baking Pan
+Brew Kettle
+Heavy Grinder
 
 What it can make:
 
@@ -58,6 +61,17 @@ Simple Dried Health Rations
 Simple Dried Mana Rations
 Elaborate Dried Health Rations
 Elaborate Dried Mana Rations
+Keg of Amber Ape (to be available with TOD patch)
+Keg of Tusker Spit Ale (to be available with TOD patch)
+Keg of Bobo's Stout (to be available with TOD patch)
+Keg of Apothecary Zongo's Stout (recipe not available until content catches up)
+Keg of Duke Raoul's Distillation (recipe not available until content catches up)
+Keg of Hunter's Stock Amber (recipe not available until content catches up)
+Roasted Beans
+Chocolate Liquor
+Hot Sauce
+Ground Ginger
+
 
 Fletching:
 Wrapped Bundle of Greater/Deadly Arrowheads
