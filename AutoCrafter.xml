@@ -1,0 +1,2820 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="table" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Condition_x0020_Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Action_x0020_Type" type="xs:string" minOccurs="0" />
+                <xs:element name="Condition_x0020_Data" type="xs:string" minOccurs="0" />
+                <xs:element name="Action_x0020_Data" type="xs:string" minOccurs="0" />
+                <xs:element name="State" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <table>
+    <Condition_x0020_Type>ChatMessage</Condition_x0020_Type>
+    <Action_x0020_Type>None</Action_x0020_Type>
+    <Condition_x0020_Data>     %% AutoCrafter Version 1.7 %%</Condition_x0020_Data>
+    <Action_x0020_Data>0</Action_x0020_Data>
+    <State>*** Edit Here ***</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[Stack Seconds, 15]</Action_x0020_Data>
+    <State>*** Edit Here ***</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ChatMessage</Condition_x0020_Type>
+    <Action_x0020_Type>None</Action_x0020_Type>
+    <Condition_x0020_Data>%% DO NOT EDIT BELOW THIS LINE %%</Condition_x0020_Data>
+    <Action_x0020_Data>0</Action_x0020_Data>
+    <State>*** Edit Here ***</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[customone]]}Expression{istrue[getvar[customtwo]]}</Condition_x0020_Data>
+    <Action_x0020_Data>ChatWithExpression{\/t +getcharstringprop[1]+\, I am now ready to apply +getvar[selectionone]+\ to +getvar[selectiontwo]+\.}ChatWithExpression{\/t +getcharstringprop[1]+\, I should press Go\.}</Action_x0020_Data>
+    <State>*** Edit Here ***</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>CreateView</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>AutoCrafter;&lt;?xml version="1.0"?&gt;
+&lt;view width="318" height="300" title="AutoCrafter"&gt;
+&lt;control type="layout"&gt;
+&lt;control type="button" name="Go" left="6" top="6" width="150" height="15" text="Go" setstate="Check" actionexpr="setvar[auto, 1]" /&gt;
+&lt;control type="button" name="Reset" left="162" top="6" width="150" height="15" text="Reset" setstate="Default" actionexpr="clearallvars[]" /&gt;
+&lt;control type="button" name="Chorizite Heads" left="6" top="27" width="150" height="15" text="Chorizite Heads" setstate="Check" actionexpr="setvar[chor, 1]" /&gt;
+&lt;control type="button" name="Intricate Keys" left="6" top="48" width="150" height="15" text="Intricate Keys" setstate="Check" actionexpr="setvar[hearts, 1]" /&gt;
+&lt;control type="button" name="Pyreal Bars" left="6" top="69" width="150" height="15" text="Pyreal Bars" setstate="Check" actionexpr="setvar[bar, 1]" /&gt;
+&lt;control type="button" name="Pyreal Ingots" left="6" top="90" width="150" height="15" text="Pyreal Ingots" setstate="Check" actionexpr="setvar[ingot, 1]" /&gt;
+&lt;control type="button" name="Trade Health Elixers" left="6" top="111" width="150" height="15" text="Trade Health Elixers" setstate="Check" actionexpr="setvar[the, 1]" /&gt;
+&lt;control type="button" name="Trade Mana Elixers" left="6" top="132" width="150" height="15" text="Trade Mana Elixers" setstate="Check" actionexpr="setvar[tme, 1]" /&gt;
+&lt;control type="button" name="Condensed Dispel Potions" left="6" top="153" width="150" height="15" text="Condensed Dispel Potions" setstate="Check" actionexpr="setvar[dispel, 1]" /&gt;
+&lt;control type="button" name="Infused Quills" left="6" top="174" width="150" height="15" text="Infused Quills" setstate="Check" actionexpr="setvar[quills, 1]" /&gt;
+&lt;control type="button" name="Thick Diamond Oil" left="6" top="195" width="150" height="15" text="Thick Diamond Oil" setstate="Check" actionexpr="setvar[tdo, 1]" /&gt;
+&lt;control type="button" name="Diamond Ingot" left="6" top="216" width="150" height="15" text="Diamond Ingot" setstate="Check" actionexpr="setvar[pdi, 1]" /&gt;
+&lt;control type="button" name="Keyrings" left="6" top="237" width="150" height="15" text="Keyrings" setstate="Check" actionexpr="setvar[keyrings, 1]" /&gt;
+&lt;control type="button" name="CustomOne" left="6" top="258" width="150" height="15" text="Apply" setstate="Custom Selection One" actionexpr="setvar[customone, 1]" /&gt;
+&lt;control type="button" name="CustomTwo" left="162" top="258" width="150" height="15" text="To" setstate="Custom Selection Two" actionexpr="setvar[customtwo, 1]" /&gt;
+&lt;control type="button" name="Version 1.7" left="6" top="279" width="306" height="15" text="Version 1.7" setstate="*** Edit Here ***" actionexpr="chatbox[\/t +getcharstringprop[1]+\, Well\, that didn\'t do anything\.]" /&gt;
+&lt;control type="button" name="KegAmberApe" left="162" top="27" width="150" height="15" text="Keg of Amber Ape" setstate="Check" actionexpr="setvar[amberape, 1]" /&gt;
+&lt;control type="button" name="KegBoboStout" left="162" top="48" width="150" height="15" text="Keg of Bobo's Stout" setstate="Check" actionexpr="setvar[bobostout, 1]" /&gt;
+&lt;control type="button" name="KegSpitAle" left="162" top="69" width="150" height="15" text="Keg of Tusker Spit Ale" setstate="Check" actionexpr="setvar[spitale, 1]" /&gt;
+&lt;control type="button" name="KegZongoStout" left="162" top="90" width="150" height="15" text="Keg of Zongo's Stout" setstate="Check" actionexpr="setvar[zongostout, 1]" /&gt;
+&lt;control type="button" name="KegRaoulDist" left="162" top="111" width="150" height="15" text="Keg of Raoul's Distillation" setstate="Check" actionexpr="setvar[raouldist, 1]" /&gt;
+&lt;control type="button" name="KegHunterStock" left="162" top="132" width="150" height="15" text="Keg of Hunter's Stock" setstate="Check" actionexpr="setvar[hunterstock, 1]" /&gt;
+&lt;/control&gt;
+&lt;/view&gt;</Action_x0020_Data>
+    <State>*** Edit Here ***</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>*** Main Loop ***</Action_x0020_Data>
+    <State>*** Edit Here ***</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetVTOption</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>autostack;true</Action_x0020_Data>
+    <State>*** Main Loop ***</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>uisetlabel[uigetcontrol[AutoCrafter, Go], Running]</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetVTOption</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>autostack;false</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Quicksilver Pea;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcBloodSeekerInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Bloodseeker Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcBloodSeekerOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Stibnite Pea;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcBloodHunterInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Bloodhunter Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcBloodHunterOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Turpeth Pea;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcFireInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Fire Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcFireOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Colcothar Pea;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcFrostInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Frost Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcFrostOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Brimstone Pea;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcAcidInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Acid Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcAcidOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Cobalt Pea;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcLightningInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Lightning Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcLightningOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Arrowheads;1}ItemCountGE{Concentrated Bloodseeker Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}ItemCountGE{Concentrated Bloodhunter Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}ItemCountGE{Concentrated Acid Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterAcidArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}ItemCountGE{Concentrated Acid Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyAcidArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}ItemCountGE{Concentrated Fire Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterFireArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}ItemCountGE{Concentrated Fire Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyFireArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}ItemCountGE{Concentrated Frost Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterFrostArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}ItemCountGE{Concentrated Frost Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyFrostArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}ItemCountGE{Concentrated Lightning Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterLightningArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}ItemCountGE{Concentrated Lightning Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyLightningArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Blunt Arrowheads;1}ItemCountGE{Concentrated Bloodseeker Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterBluntArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Blunt Arrowheads;1}ItemCountGE{Concentrated Bloodhunter Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyBluntArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Armor Piercing Arrowheads;1}ItemCountGE{Concentrated Bloodseeker Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterArmorPiercingArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Armor Piercing Arrowheads;1}ItemCountGE{Concentrated Bloodhunter Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyArmorPiercingArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Frog Crotch Arrowheads;1}ItemCountGE{Concentrated Bloodseeker Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterFrogCrotchArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Frog Crotch Arrowheads;1}ItemCountGE{Concentrated Bloodhunter Oil;1}Expression{istrue[getvar[fletching]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyFrogCrotchArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Treated Hyssop;1}ItemCountGE{Treated Mandrake;1}Expression{istrue[getvar[healing]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-CombinedHyssopMandrake</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Simple Dried Rations;1}ItemCountGE{Hot Sauce;1}Expression{getvar[cooking]==true}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-SimpleDriedHealthRations</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Elaborate Dried Rations;1}ItemCountGE{Hot Sauce;1}Expression{getvar[cooking]==true}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ElabDriedHealthRations</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Simple Dried Rations;1}ItemCountGE{Cinnamon;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-SimpleDriedManaRations</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Elaborate Dried Rations;1}ItemCountGE{Cinnamon;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ElabDriedManaRations</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wood Heart;1}Expression{istrue[getvar[ictool]]}Expression{istrue[getvar[lockpick]]}Expression{istrue[getvar[hearts]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-IntricateWoodenKey</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Copper Heart;1}Expression{istrue[getvar[ictool]]}Expression{istrue[getvar[lockpick]]}Expression{istrue[getvar[hearts]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-IntricateCopperKey</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Obsidian Heart;1}Expression{istrue[getvar[ictool]]}Expression{istrue[getvar[lockpick]]}Expression{istrue[getvar[hearts]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-IntricateObsidianKey</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountGE: {Hennacin Plant;1}ItemCountGE: {Lapyan Plant;1}ItemCountGE: {Colban Plant;1}ItemCountGE: {Berimphur Plant;1}ItemCountGE: {Argenory Plant;1}ItemCountGE: {Minalim Plant;1}ItemCountGE: {Relanim Plant;1}ItemCountGE: {Thananim Plant;1}ItemCountGE: {Verdalim Plant;1}}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[mortar]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-CrushedPlants</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountGE: {Crushed Argenory Plant;1}ItemCountGE: {Crushed Berimphur Plant;1}ItemCountGE: {Crushed Colban Plant;1}ItemCountGE: {Crushed Hennacin Plant;1}ItemCountGE: {Crushed Lapyan Plant;1}ItemCountGE: {Crushed Minalim Plant;1}ItemCountGE: {Crushed Relanim Plant;1}ItemCountGE: {Crushed Thananim Plant;1}ItemCountGE: {Crushed Verdalim Plant;1}}Expression{istrue[getvar[alchemy]]}ItemCountGE{Neutral Balm;1}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-VialofDye</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}Expression{istrue[getvar[fletching]]}Expression{istrue[getvar[chorizite]]}Expression{istrue[getvar[chor]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterChoriziteArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}Expression{istrue[getvar[fletching]]}Expression{istrue[getvar[chorizite]]}Expression{istrue[getvar[chor]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyChoriziteArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}Expression{istrue[getvar[fletching]]}Expression{istrue[getvar[barbed]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapGreaterBarbedArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}Expression{istrue[getvar[fletching]]}Expression{istrue[getvar[barbed]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-WrapDeadlyBarbedArrowheads</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountGE: {Mangled Dark Key;1}ItemCountGE: {Twisted Dark Key;1}ItemCountGE: {Shattered Mana Forge Key;1}ItemCountGE: {Virindi Singularity Key;1}ItemCountGE: {Virindi Master Key;1}ItemCountGE: {Virindi Directive Key;1}ItemCountGE: {Broken Black Marrow Key;1}ItemCountGE: {Misshapen Bone Fragment;1}}Expression{istrue[getvar[lockpick]]}Expression{istrue[getvar[ictool]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-Keys</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountGE: {Refined Chorizite Chunk;1}ItemCountGE: {Refined Medium-Grade Chorizite;1}}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[mortar]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-GroundChorizite</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ground Chorizite;1}ItemCountGE{Vitriol;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-Chorizite</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Pyreal Mote;2}ItemCountGE{Pyreal Sliver;2}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-PyrealSliver/Nugget</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Pyreal Nugget;2}Expression{istrue[getvar[bar]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-PyrealBar</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Pyreal Bar;2}Expression{istrue[getvar[ingot]]}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-PyrealIngot</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Vitriol;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-HealthInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Health Infusion;1}ItemCountGE{Potion of Healing;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[the]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-TradeHealthElixer</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Mana Infusion;1}ItemCountGE{Mana Potion;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[tme]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-TradeManaElixer</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}Expression{istrue[getvar[dispel]]}ItemCountGE{Neutral Balm;1}Any{ItemCountGE: {Chorizite;4}ItemCountGE: {Chorizite Oil;2}}</Condition_x0020_Data>
+    <Action_x0020_Data>SetVTOption{autostack;false}SetState{Make-ChoriziteOil}</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Mana Scarab;1}Any{ItemCountGE: {Quill of Benevolence;1}ItemCountGE: {Quill of Introspection;1}ItemCountGE: {Quill of Extraction;1}ItemCountGE: {Quill of Infliction;1}}Expression{istrue[getvar[quills]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-InfusedQuills</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Diamond Powder;1}ItemCountGE{Decanter of Essence;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[tdo]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ThickDiamondOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Quality Pyreal Ingot;1}ItemCountGE{Thick Diamond Oil;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[pdi]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-PerfectDiamondInfusedIngot</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[customone]]}Expression{istrue[getvar[customtwo]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-Custom</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[lockpick]]}Expression{istrue[getvar[ictool]]}Expression{istrue[getvar[keyrings]]}Any{ItemCountGE: {Burning Sands Golem Heart;1}ItemCountGE: {Coral Heart;1}ItemCountGE: {Black Coral Heart;1}ItemCountGE: {Diamond Heart;1}ItemCountGE: {Granite Heart;1}ItemCountGE: {Iron Heart;1}ItemCountGE: {Platinum Golem Heart;1}ItemCountGE: {Pyreal Golem Heart;1}ItemCountGE: {Glacial Golem Heart;1}ItemCountGE: {Gold Golem Heart;1}ItemCountGE: {Infused Blood Golem Heart;1}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-Keyrings</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Realgar Pea;1}Expression{istrue[getvar[alchemy]]}Expression{istrue[getvar[alembic]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcVictualInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Victual Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcVictualOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[alchemy]]}Any{All: {ItemCountGE: {Realgar;1}Expression: {istrue[getvar[alembic]]}}All: {ItemCountGE: {Concentrated Victual Infusion;1}Expression: {istrue[getvar[eye]]}}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-VictualInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[alchemy]]}Any{All: {ItemCountGE: {Victual Infusion;1}ItemCountGE: {Aqua Incanta;1}}All: {ItemCountGE: {Concentrated Victual Oil;1}Expression: {istrue[getvar[eye]]}}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-VictualOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Gypsum Pea;1}Expression{istrue[getvar[alembic]]}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcManaInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Mana Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcManaOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[alchemy]]}Any{All: {ItemCountGE: {Gypsum;1}Expression: {istrue[getvar[alembic]]}}All: {ItemCountGE: {Concentrated Mana Infusion;1}Expression: {istrue[getvar[eye]]}}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ManaInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[alchemy]]}Any{All: {ItemCountGE: {Mana Infusion;1}ItemCountGE: {Aqua Incanta;1}}All: {ItemCountGE: {Concentrated Mana Oil;1}Expression: {istrue[getvar[eye]]}}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ManaOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Vitriol Pea;1}Expression{istrue[getvar[alembic]]}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcHealthInfusion</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Health Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcHealthOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Health Infusion;1}ItemCountGE{Aqua Incanta;1}Expression{istrue[getvar[alchemy]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-HealthOil</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{istrue[getvar[kettle]]}ItemCountGE{Water;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-FullBrewKettle</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Plain Barley;1}Expression{istrue[getvar[pan]]}Expression{istrue[getvar[cooking]]}Any{Expression: {istrue[getvar[bobostout]]}Expression: {istrue[getvar[zongostout]]}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-RoastedBarley</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Plain Barley;1}ItemCountGE{Full Brew Kettle;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-SweetWort</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Roasted Barley;1}ItemCountGE{Full Brew Kettle;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-DarkWort</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Amber Barley;1}ItemCountGE{Full Brew Kettle;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-AmberWort</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ultra Green Hops;1}ItemCountGE{Dark Wort;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-AromaticDarkWort</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ultra Green Hops;1}ItemCountGE{Amber Wort;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-AromaticAmberWort</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ultra Green Hops;1}ItemCountGE{Sweet Wort;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-AromaticFinishedWort</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Dried Yeast;1}ItemCountGE{Aromatic Dark Brew;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-GloriousDarkBrew</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Dried Yeast;1}ItemCountGE{Aromatic Amber Wort;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-GloriousAmberBrew</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Dried Yeast;1}ItemCountGE{Aromatic Finished Wort;1}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-GloriousFermentedBrew</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Tusker Spit;1}Any{ItemCountGE: {Glorious Dark Brew;1}ItemCountGE: {Glorious Amber Brew;1}ItemCountGE: {Glorious Fermented Brew;1}}Expression{istrue[getvar[cooking]]}Any{Expression: {istrue[getvar[bobostout]]}Expression: {istrue[getvar[amberape]]}Expression: {istrue[getvar[spitale]]}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-BrewSpit</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Moarsmuck;1}Any{ItemCountGE: {Glorious Dark Brew;1}ItemCountGE: {Glorious Amber Brew;1}ItemCountGE: {Glorious Fermented Brew;1}}Expression{istrue[getvar[cooking]]}Any{Expression: {istrue[getvar[zongostout]]}Expression: {istrue[getvar[raouldist]]}Expression: {istrue[getvar[hunterstock]]}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-BrewMuck</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Empty Stopped Keg;1}Any{ItemCountGE: {Amber Ape Brew;1}ItemCountGE: {Bobo's Stout Brew;1}ItemCountGE: {Tusker Spit Brew;1}ItemCountGE: {Apothecary Zongo's Stout Brew;1}ItemCountGE: {Duke Raoul's Distillation Brew;1}ItemCountGE: {Hunter's Stock Amber Brew;1}}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-Keg</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Brown Beans;1}Expression{istrue[getvar[pan]]}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-RoastedBeans</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Roasted Beans;1}Expression{istrue[getvar[grinder]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ChocolateLiquor</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ginger;1}Expression{istrue[getvar[grinder]]}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-GroundGinger</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Hot Pepper;1}Expression{istrue[getvar[mortar]]}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-HotSauce</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Cinnamon Bark;1}Expression{istrue[getvar[mortar]]}Expression{istrue[getvar[cooking]]}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-Cinnamon</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>ChatWithExpression{\/t +getcharstringprop[1]+\, I do not have enough materials remaining in my pack to craft anything else\.}ExpressionAct{clearvar[chor]}ExpressionAct{clearvar[hearts]}ExpressionAct{clearvar[bar]}ExpressionAct{clearvar[ingot]}ExpressionAct{clearvar[the]}ExpressionAct{clearvar[tme]}ExpressionAct{clearvar[dispel]}ExpressionAct{clearvar[quills]}ExpressionAct{clearvar[keyrings]}ExpressionAct{clearvar[pdi]}ExpressionAct{clearvar[tdo]}ExpressionAct{uisetlabel[uigetcontrol[AutoCrafter, Go], Go]}ExpressionAct{clearvar[amberape]}ExpressionAct{clearvar[spitale]}ExpressionAct{clearvar[bobostout]}ExpressionAct{clearvar[zongostout]}ExpressionAct{clearvar[hunterstock]}ExpressionAct{clearvar[raouldist]}SetState{*** Main Loop ***}</Action_x0020_Data>
+    <State>Check</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[selectobjone, wobjectgetselection[]]</Action_x0020_Data>
+    <State>Custom Selection One</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{setvar[selectionone, wobjectgetname[getvar[selectobjone]]]}ExpressionAct{setvar[customone, 1]}ChatWithExpression{\/t +getcharstringprop[1]+\, Apply item set to +getvar[selectionone]}SetState{*** Edit Here ***}</Action_x0020_Data>
+    <State>Custom Selection One</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[selectobjtwo, wobjectgetselection[]]</Action_x0020_Data>
+    <State>Custom Selection Two</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{setvar[selectiontwo, wobjectgetname[getvar[selectobjtwo]]]}ExpressionAct{setvar[customtwo, 1]}ChatWithExpression{\/t +getcharstringprop[1]+\, To item set to +getvar[selectiontwo]}SetState{*** Edit Here ***}</Action_x0020_Data>
+    <State>Custom Selection Two</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>SetVTOption{idlepeacemode;true}SetVTOption{autostack;true}</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Expression</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>getcharskill_traininglevel[38]&gt;=2</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[alchemy, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Expression</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>getcharskill_traininglevel[39]&gt;=2</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[cooking, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Expression</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>getcharskill_traininglevel[21]&gt;=2</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[healing, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Expression</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>getcharskill_traininglevel[23]&gt;=2</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[lockpick, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Expression</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>getcharskill_traininglevel[37]&gt;=2</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[fletching, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Alembic;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[alembic, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Intricate Carving Tool;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[ictool, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Mortar and Pestle;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[mortar, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Barbed Fletching Tool;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[barbed, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Chorizite Fletching Tool;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[chorizite, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Eye Dropper;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[eye, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Brew Kettle;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[kettle, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Baking Pan;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[pan, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ExpressionAct</Action_x0020_Type>
+    <Condition_x0020_Data>Heavy Grinder;1</Condition_x0020_Data>
+    <Action_x0020_Data>setvar[grinder, true]</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>ChatWithExpression{\/t +getcharstringprop[1]+\, Skills Available\: Alchemy\: +cstr[getvar[alchemy]]+\, Cooking\: +cstr[getvar[cooking]]+\, Fletching\: +cstr[getvar[fletching]]+\, Lockpick\: +cstr[getvar[lockpick]]+\, Healing\: +cstr[getvar[healing]]+\.}ChatWithExpression{\/t +getcharstringprop[1]+\, Tools Available\: Alembic\: +cstr[getvar[alembic]]+\, Barbed Fletching Tool\: +cstr[getvar[barbed]]+\, Chorizite Fletching Tool\: +cstr[getvar[chorizite]]+\, Eye Dropper\: +cstr[getvar[eye]]+\, Intricate Carving Tool\: +cstr[getvar[ictool]]+\, Mortar and Pestle\: +cstr[getvar[mortar]]+\, Baking Pan\: +cstr[getvar[pan]]+\, Heavy Grinder\: +cstr[getvar[grinder]]+\, Brew Kettle\: +cstr[getvar[kettle]]+\.}SetState{*** Edit Here ***}</Action_x0020_Data>
+    <State>Default</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-AmberWort</Action_x0020_Data>
+    <State>Make-AmberWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Amber Barley;1}ItemCountGE{Full Brew Kettle;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Amber Barley], wobjectfindininventorybyname[Full Brew Kettle]]}SetState{Make-AmberWort}</Action_x0020_Data>
+    <State>Make-AmberWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Amber Barley;0}ItemCountLE{Full Brew Kettle;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-AmberWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-AromaticAmberWort</Action_x0020_Data>
+    <State>Make-AromaticAmberWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ultra Green Hops;1}ItemCountGE{Amber Wort;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Ultra Green Hops], wobjectfindininventorybyname[Amber Wort]]}SetState{Make-AromaticAmberWort}</Action_x0020_Data>
+    <State>Make-AromaticAmberWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Ultra Green Hops;0}ItemCountLE{Amber Wort;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-AromaticAmberWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-AromaticDarkWort</Action_x0020_Data>
+    <State>Make-AromaticDarkWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ultra Green Hops;1}ItemCountGE{Dark Wort;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Ultra Green Hops], wobjectfindininventorybyname[Dark Wort]]}SetState{Make-AromaticDarkWort}</Action_x0020_Data>
+    <State>Make-AromaticDarkWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Ultra Green Hops;0}ItemCountLE{Dark Wort;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-AromaticDarkWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-AromaticFinishedWort</Action_x0020_Data>
+    <State>Make-AromaticFinishedWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ultra Green Hops;1}ItemCountGE{Sweet Wort;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Ultra Green Hops], wobjectfindininventorybyname[Sweet Wort]]}SetState{Make-AromaticFinishedWort}</Action_x0020_Data>
+    <State>Make-AromaticFinishedWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Ultra Green Hops;0}ItemCountLE{Sweet Wort;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-AromaticFinishedWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-BrewMuck</Action_x0020_Data>
+    <State>Make-BrewMuck</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Moarsmuck;1}Any{ItemCountGE: {Glorious Amber Brew;1}ItemCountGE: {Glorious Dark Brew;1}ItemCountGE: {Glorious Fermented Brew;1}}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Moarsmuck], wobjectfindininventorybyname[Glorious Fermented Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Moarsmuck], wobjectfindininventorybyname[Glorious Dark Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Moarsmuck], wobjectfindininventorybyname[Glorious Amber Brew]]}SetState{Make-BrewMuck}</Action_x0020_Data>
+    <State>Make-BrewMuck</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Moarsmuck;0}All{ItemCountLE: {Glorious Dark Brew;0}ItemCountLE: {Glorious Amber Brew;0}ItemCountLE: {Glorious Fermented Brew;0}}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-BrewMuck</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-BrewSpit</Action_x0020_Data>
+    <State>Make-BrewSpit</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Tusker Spit;1}Any{ItemCountGE: {Glorious Amber Brew;1}ItemCountGE: {Glorious Dark Brew;1}ItemCountGE: {Glorious Fermented Brew;1}}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Tusker Spit], wobjectfindininventorybyname[Glorious Dark Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Tusker Spit], wobjectfindininventorybyname[Glorious Amber Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Tusker Spit], wobjectfindininventorybyname[Glorious Fermented Brew]]}SetState{Make-BrewSpit}</Action_x0020_Data>
+    <State>Make-BrewSpit</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Tusker Spit;0}All{ItemCountLE: {Glorious Amber Brew;0}ItemCountLE: {Glorious Dark Brew;0}ItemCountLE: {Glorious Fermented Brew;0}}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-BrewSpit</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ChocolateLiquor</Action_x0020_Data>
+    <State>Make-ChocolateLiquor</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Roasted Beans;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Heavy Grinder], wobjectfindininventorybyname[Roasted Beans]]}SetState{Make-ChocolateLiquor}</Action_x0020_Data>
+    <State>Make-ChocolateLiquor</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Roasted Beans;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ChocolateLiquor</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-Chorizite</Action_x0020_Data>
+    <State>Make-Chorizite</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ground Chorizite;1}ItemCountGE{Vitriol;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Ground Chorizite], wobjectfindininventorybyname[Vitriol]]}SetState{Make-Chorizite}</Action_x0020_Data>
+    <State>Make-Chorizite</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Ground Chorizite;0}ItemCountLE{Vitriol;0}SecondsInStateGE{4}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-Chorizite</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetVTOption</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>autostack;false</Action_x0020_Data>
+    <State>Make-ChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Chorizite;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Chorizite]]}SetState{Make-ChoriziteOil}</Action_x0020_Data>
+    <State>Make-ChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Chorizite;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-StrongChoriziteOil</Action_x0020_Data>
+    <State>Make-ChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-Cinnamon</Action_x0020_Data>
+    <State>Make-Cinnamon</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Cinnamon Bark;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Cinnamon Bark]]}SetState{Make-Cinnamon}</Action_x0020_Data>
+    <State>Make-Cinnamon</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Cinnamon Bark;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-Cinnamon</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-CombinedHyssopMandrake</Action_x0020_Data>
+    <State>Make-CombinedHyssopMandrake</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Treated Hyssop;1}ItemCountGE{Treated Mandrake;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Treated Hyssop], wobjectfindininventorybyname[Treated Mandrake]]}SetState{Make-CombinedHyssopMandrake}</Action_x0020_Data>
+    <State>Make-CombinedHyssopMandrake</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Treated Hyssop;0}ItemCountLE{Treated Mandrake;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-CombinedHyssopMandrake</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcAcidInfusion</Action_x0020_Data>
+    <State>Make-ConcAcidInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Brimstone Pea;1</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Brimstone Pea]]}SetState{Make-ConcAcidInfusion}</Action_x0020_Data>
+    <State>Make-ConcAcidInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Brimstone Pea;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcAcidInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcAcidOil</Action_x0020_Data>
+    <State>Make-ConcAcidOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Acid Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Acid Infusion], wobjectfindininventorybyname[Concentrated Aqua Incanta]]}SetState{Make-ConcAcidOil}</Action_x0020_Data>
+    <State>Make-ConcAcidOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Acid Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcAcidOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcBloodHunterInfusion</Action_x0020_Data>
+    <State>Make-ConcBloodHunterInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Stibnite Pea;1</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Stibnite Pea]]}SetState{Make-ConcBloodHunterInfusion}</Action_x0020_Data>
+    <State>Make-ConcBloodHunterInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Stibnite Pea;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcBloodHunterInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcBloodHunterOil</Action_x0020_Data>
+    <State>Make-ConcBloodHunterOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Bloodhunter Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodhunter Infusion], wobjectfindininventorybyname[Concentrated Aqua Incanta]]}SetState{Make-ConcBloodHunterOil}</Action_x0020_Data>
+    <State>Make-ConcBloodHunterOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Bloodhunter Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcBloodHunterOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcBloodSeekerInfusion</Action_x0020_Data>
+    <State>Make-ConcBloodSeekerInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Quicksilver Pea;1</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Quicksilver Pea]]}SetState{Make-ConcBloodSeekerInfusion}</Action_x0020_Data>
+    <State>Make-ConcBloodSeekerInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Quicksilver Pea;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcBloodSeekerInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcBloodSeekerOil</Action_x0020_Data>
+    <State>Make-ConcBloodSeekerOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Bloodseeker Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodseeker Infusion], wobjectfindininventorybyname[Concentrated Aqua Incanta]]}SetState{Make-ConcBloodSeekerOil}</Action_x0020_Data>
+    <State>Make-ConcBloodSeekerOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Bloodseeker Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcBloodSeekerOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetVTOption</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>autostack;false</Action_x0020_Data>
+    <State>Make-ConcChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Strong Chorizite Oil;1}ItemCountGE{Chorizite Oil;1}SecondsInStateGE{3}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Chorizite Oil], wobjectfindininventorybyname[Strong Chorizite Oil]]}SetState{Make-CondensedChoriziteOil}</Action_x0020_Data>
+    <State>Make-ConcChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountLE: {Strong Chorizite Oil;0}ItemCountLE: {Chorizite Oil;0}}SecondsInStateGE{4}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-CondensedChoriziteOil</Action_x0020_Data>
+    <State>Make-ConcChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcFireInfusion</Action_x0020_Data>
+    <State>Make-ConcFireInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Turpeth Pea;1</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Turpeth Pea]]}SetState{Make-ConcFireInfusion}</Action_x0020_Data>
+    <State>Make-ConcFireInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Turpeth Pea;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcFireInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcFireOil</Action_x0020_Data>
+    <State>Make-ConcFireOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Fire Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Fire Infusion], wobjectfindininventorybyname[Concentrated Aqua Incanta]]}SetState{Make-ConcFireOil}</Action_x0020_Data>
+    <State>Make-ConcFireOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Fire Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcFireOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcFrostInfusion</Action_x0020_Data>
+    <State>Make-ConcFrostInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Colcothar Pea;1</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Colcothar Pea]]}SetState{Make-ConcFrostInfusion}</Action_x0020_Data>
+    <State>Make-ConcFrostInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Colcothar Pea;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcFrostInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcFrostOil</Action_x0020_Data>
+    <State>Make-ConcFrostOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Frost Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Frost Infusion], wobjectfindininventorybyname[Concentrated Aqua Incanta]]}SetState{Make-ConcFrostOil}</Action_x0020_Data>
+    <State>Make-ConcFrostOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Frost Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcFrostOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcHealthInfusion</Action_x0020_Data>
+    <State>Make-ConcHealthInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Vitriol Pea;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Vitriol Pea]]}SetState{Make-ConcHealthInfusion}</Action_x0020_Data>
+    <State>Make-ConcHealthInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Vitriol Pea;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcHealthInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcHealthOil</Action_x0020_Data>
+    <State>Make-ConcHealthOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Health Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Aqua Incanta], wobjectfindininventorybyname[Concentrated Health Infusion]]}SetState{Make-ConcHealthOil}</Action_x0020_Data>
+    <State>Make-ConcHealthOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Health Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcHealthOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcLightningInfusion</Action_x0020_Data>
+    <State>Make-ConcLightningInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Cobalt Pea;1</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Cobalt Pea]]}SetState{Make-ConcLightningInfusion}</Action_x0020_Data>
+    <State>Make-ConcLightningInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Cobalt Pea;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcLightningInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcLightningOil</Action_x0020_Data>
+    <State>Make-ConcLightningOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Lightning Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Lightning Infusion], wobjectfindininventorybyname[Concentrated Aqua Incanta]]}SetState{Make-ConcLightningOil}</Action_x0020_Data>
+    <State>Make-ConcLightningOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Lightning Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcLightningOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcManaInfusion</Action_x0020_Data>
+    <State>Make-ConcManaInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Gypsum Pea;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Gypsum Pea]]}SetState{Make-ConcManaInfusion}</Action_x0020_Data>
+    <State>Make-ConcManaInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Gypsum Pea;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcManaInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcManaOil</Action_x0020_Data>
+    <State>Make-ConcManaOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Mana Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Aqua Incanta], wobjectfindininventorybyname[Concentrated Mana Infusion]]}SetState{Make-ConcManaOil}</Action_x0020_Data>
+    <State>Make-ConcManaOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Mana Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcManaOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcVictualInfusion</Action_x0020_Data>
+    <State>Make-ConcVictualInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Realgar Pea;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Realgar Pea]]}SetState{Make-ConcVictualInfusion}</Action_x0020_Data>
+    <State>Make-ConcVictualInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Realgar Pea;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ConcVictualInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ConcVictualOil</Action_x0020_Data>
+    <State>Make-ConcVictualOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Victual Infusion;1}ItemCountGE{Concentrated Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Aqua Incanta], wobjectfindininventorybyname[Concentrated Victual Infusion]]}SetState{Make-ConcVictualOil}</Action_x0020_Data>
+    <State>Make-ConcVictualOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Victual Infusion;0}ItemCountLE{Concentrated Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>SetState{Check}</Action_x0020_Data>
+    <State>Make-ConcVictualOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetVTOption</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>autostack;false</Action_x0020_Data>
+    <State>Make-CondensedChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Chorizite Oil;1}ItemCountGE{Chorizite Oil;1}SecondsInStateGE{3}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Chorizite Oil], wobjectfindininventorybyname[Concentrated Chorizite Oil]]}SetState{Make-CondensedDispelPotions}</Action_x0020_Data>
+    <State>Make-CondensedChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountLE: {Concentrated Chorizite Oil;0}ItemCountLE: {Chorizite Oil;0}}SecondsInStateGE{4}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-CondensedDispelPotions</Action_x0020_Data>
+    <State>Make-CondensedChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetVTOption</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>autostack;false</Action_x0020_Data>
+    <State>Make-CondensedDispelPotions</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Condensed Chorizite Oil;1}ItemCountGE{Neutral Balm;1}SecondsInStateGE{3}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Condensed Chorizite Oil], wobjectfindininventorybyname[Neutral Balm]]}SetState{Make-CondensedDispelPotions}</Action_x0020_Data>
+    <State>Make-CondensedDispelPotions</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Condensed Chorizite Oil;0}ItemCountLE{Neutral Balm;0}SecondsInStateGE{4}</Condition_x0020_Data>
+    <Action_x0020_Data>SetState{Check}</Action_x0020_Data>
+    <State>Make-CondensedDispelPotions</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-CrushedPlants</Action_x0020_Data>
+    <State>Make-CrushedPlants</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Argenory Plant;1}ItemCountGE{Berimphur Plant;1}ItemCountGE{Colban Plant;1}ItemCountGE{Hennacin Plant;1}ItemCountGE{Lapyan Plant;1}ItemCountGE{Minalim Plant;1}ItemCountGE{Relanim Plant;1}ItemCountGE{Thananim Plant;1}ItemCountGE{Verdalim Plant;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Argenory Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Berimphur Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Colban Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Hennacin Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Lapyan Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Minalim Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Relanim Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Thananim Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Verdalim Plant]]}SetState{Make-CrushedPlants}</Action_x0020_Data>
+    <State>Make-CrushedPlants</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Argenory Plant;0}ItemCountLE{Berimphur Plant;0}ItemCountLE{Colban Plant;0}ItemCountLE{Hennacin Plant;0}ItemCountLE{Lapyan Plant;0}ItemCountLE{Minalim Plant;0}ItemCountLE{Relanim Plant;0}ItemCountLE{Thananim Plant;0}ItemCountLE{Verdalim Plant;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-CrushedPlants</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-Custom</Action_x0020_Data>
+    <State>Make-Custom</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Expression{wobjectfindininventorybyname[getvar[selectionone]]==0}Expression{wobjectfindininventorybyname[getvar[selectiontwo]]==0}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{clearvar[customone]}ExpressionAct{clearvar[customtwo]}ExpressionAct{clearvar[selectionone]}ExpressionAct{clearvar[selectiontwo]}SetState{Check}</Action_x0020_Data>
+    <State>Make-Custom</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[getvar[selectionone]], wobjectfindininventorybyname[getvar[selectiontwo]]]}SetState{Make-Custom}</Action_x0020_Data>
+    <State>Make-Custom</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-DarkWort</Action_x0020_Data>
+    <State>Make-DarkWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Roasted Barley;1}ItemCountGE{Full Brew Kettle;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Roasted Barley], wobjectfindininventorybyname[Full Brew Kettle]]}SetState{Make-DarkWort}</Action_x0020_Data>
+    <State>Make-DarkWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Roasted Barley;0}ItemCountLE{Full Brew Kettle;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-DarkWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ElabDriedHealthRations</Action_x0020_Data>
+    <State>Make-ElabDriedHealthRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Elaborate Dried Rations;1}ItemCountGE{Hot Sauce;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Hot Sauce], wobjectfindininventorybyname[Elaborate Dried Rations]]}SetState{Make-ElabDriedHealthRations}</Action_x0020_Data>
+    <State>Make-ElabDriedHealthRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Elaborate Dried Rations;0}ItemCountLE{Hot Sauce;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ElabDriedHealthRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ElabDriedManaRations</Action_x0020_Data>
+    <State>Make-ElabDriedManaRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Elaborate Dried Rations;1}ItemCountGE{Cinnamon;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Cinnamon], wobjectfindininventorybyname[Elaborate Dried Rations]]}SetState{Make-ElabDriedManaRations}</Action_x0020_Data>
+    <State>Make-ElabDriedManaRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Elaborate Dried Rations;0}ItemCountLE{Cinnamon;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ElabDriedManaRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-FullBrewKettle</Action_x0020_Data>
+    <State>Make-FullBrewKettle</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Water;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Brew Kettle], wobjectfindininventorybyname[Water]]}SetState{Make-FullBrewKettle}</Action_x0020_Data>
+    <State>Make-FullBrewKettle</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Water;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-FullBrewKettle</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-GloriousAmberBrew</Action_x0020_Data>
+    <State>Make-GloriousAmberBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Dried Yeast;1}ItemCountGE{Aromatic Amber Wort;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Dried Yeast], wobjectfindininventorybyname[Aromatic Amber Wort]]}SetState{Make-GloriousAmberBrew}</Action_x0020_Data>
+    <State>Make-GloriousAmberBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Dried Yeast;0}ItemCountLE{Aromatic Amber Wort;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-GloriousAmberBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-GloriousDarkBrew</Action_x0020_Data>
+    <State>Make-GloriousDarkBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Dried Yeast;1}ItemCountGE{Aromatic Dark Wort;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Dried Yeast], wobjectfindininventorybyname[Aromatic Dark Wort]]}SetState{Make-GloriousDarkBrew}</Action_x0020_Data>
+    <State>Make-GloriousDarkBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Dried Yeast;0}ItemCountLE{Aromatic Dark Wort;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-GloriousDarkBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-GloriousFermentedBrew</Action_x0020_Data>
+    <State>Make-GloriousFermentedBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Dried Yeast;1}ItemCountGE{Aromatic Finished Wort;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Dried Yeast], wobjectfindininventorybyname[Aromatic Finished Wort]]}SetState{Make-GloriousFermentedBrew}</Action_x0020_Data>
+    <State>Make-GloriousFermentedBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Dried Yeast;0}ItemCountLE{Aromatic Finished Wort;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-GloriousFermentedBrew</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-GroundChorizite</Action_x0020_Data>
+    <State>Make-GroundChorizite</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Refined Chorizite Chunk;1}ItemCountGE{Refined Medium-Grade Chorizite;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Refined Chorizite Chunk]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Refined Medium-Grade Chorizite]]}SetState{Make-GroundChorizite}</Action_x0020_Data>
+    <State>Make-GroundChorizite</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Refined Chorizite Chunk;0}ItemCountLE{Refined Medium-Grade Chorizite;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-GroundChorizite</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-GroundGinger</Action_x0020_Data>
+    <State>Make-GroundGinger</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Ginger;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Heavy Grinder], wobjectfindininventorybyname[Ginger]]}SetState{Make-GroundGinger}</Action_x0020_Data>
+    <State>Make-GroundGinger</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Ginger;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-GroundGinger</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-HealthInfusion</Action_x0020_Data>
+    <State>Make-HealthInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Vitriol;1</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Vitriol]]}SetState{Make-HealthInfusion}</Action_x0020_Data>
+    <State>Make-HealthInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Vitriol;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-HealthInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-HealthOil</Action_x0020_Data>
+    <State>Make-HealthOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Health Infusion;1}ItemCountGE{Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Aqua Incanta], wobjectfindininventorybyname[Health Infusion]]}SetState{Make-HealthOil}</Action_x0020_Data>
+    <State>Make-HealthOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Health Infusion;0}ItemCountLE{Aqua Incanta;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-HealthOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-HotSauce</Action_x0020_Data>
+    <State>Make-HotSauce</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Hot Pepper;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mortar and Pestle], wobjectfindininventorybyname[Hot Pepper]]}SetState{Make-HotSauce}</Action_x0020_Data>
+    <State>Make-HotSauce</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Hot Pepper;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-HotSauce</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-InfusedQuills</Action_x0020_Data>
+    <State>Make-InfusedQuills</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Mana Scarab;1}Any{ItemCountGE: {Quill of Benevolence;1}ItemCountGE: {Quill of Introspection;1}ItemCountGE: {Quill of Extraction;1}ItemCountGE: {Quill of Infliction;1}}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Quill of Introspection], wobjectfindininventorybyname[Mana Scarab]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Quill of Benevolence], wobjectfindininventorybyname[Mana Scarab]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Quill of Infliction], wobjectfindininventorybyname[Mana Scarab]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Quill of Extraction], wobjectfindininventorybyname[Mana Scarab]]}SetState{Make-InfusedQuills}</Action_x0020_Data>
+    <State>Make-InfusedQuills</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>All{ItemCountLE: {Quill of Benevolence;0}ItemCountLE: {Quill of Introspection;0}ItemCountLE: {Quill of Extraction;0}ItemCountLE: {Quill of Infliction;0}}ItemCountLE{Mana Scarab;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-InfusedQuills</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-IntricateCopperKey</Action_x0020_Data>
+    <State>Make-IntricateCopperKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Copper Heart;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Copper Heart]]}SetState{Make-IntricateCopperKey}</Action_x0020_Data>
+    <State>Make-IntricateCopperKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Copper Heart;0</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-IntricateCopperKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-IntricateObsidianKey</Action_x0020_Data>
+    <State>Make-IntricateObsidianKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Obsidian Heart;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Obsidian Heart]]}SetState{Make-IntricateObsidianKey}</Action_x0020_Data>
+    <State>Make-IntricateObsidianKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Obsidian Heart;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-IntricateObsidianKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-IntricateWoodenKey</Action_x0020_Data>
+    <State>Make-IntricateWoodenKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wood Heart;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Wood Heart]]}SetState{Make-IntricateWoodenKey}</Action_x0020_Data>
+    <State>Make-IntricateWoodenKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wood Heart;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-IntricateWoodenKey</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-Keg</Action_x0020_Data>
+    <State>Make-Keg</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Empty Stopped Keg;1}Any{ItemCountGE: {Amber Ape Brew;1}ItemCountGE: {Bobo's Stout Brew;1}ItemCountGE: {Tusker Spit Brew;1}ItemCountGE: {Apothecary Zongo's Stout Brew;1}ItemCountGE: {Duke Raoul's Distillation Brew;1}ItemCountGE: {Hunter's Stock Amber Brew;1}}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Empty Stopped Keg], wobjectfindininventorybyname[Amber Ape Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Empty Stopped Keg], wobjectfindininventorybyname[Bobo's Stout Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Empty Stopped Keg], wobjectfindininventorybyname[Tusker Spit Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Empty Stopped Keg], wobjectfindininventorybyname[Apothecary Zongo's Stout Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Empty Stopped Keg], wobjectfindininventorybyname[Duke Raoul's Distillation Brew]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Empty Stopped Keg], wobjectfindininventorybyname[Hunter's Stock Amber Brew]]}SetState{Make-Keg}</Action_x0020_Data>
+    <State>Make-Keg</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Empty Stopped Keg;0}All{ItemCountLE: {Amber Ape Brew;0}ItemCountLE: {Bobo's Stout Brew;0}ItemCountLE: {Tusker Spit Brew;0}ItemCountLE: {Apothecary Zongo's Stout Brew;0}ItemCountLE: {Duke Raoul's Distillation Brew;0}ItemCountLE: {Hunter's Stock Amber Brew;0}}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-Keg</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-Keyrings</Action_x0020_Data>
+    <State>Make-Keyrings</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Burning Sands Golem Heart;1}ItemCountGE{Coral Heart;1}ItemCountGE{Black Coral Heart;1}ItemCountGE{Diamond Heart;1}ItemCountGE{Granite Heart;1}ItemCountGE{Iron Heart;1}ItemCountGE{Platinum Golem Heart;1}ItemCountGE{Pyreal Golem Heart;1}ItemCountGE{Glacial Golem Heart;1}ItemCountGE{Gold Golem Heart;1}ItemCountGE{Infused Blood Golem Heart;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Burning Sands Golem Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Coral Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Black Coral Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Diamond Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Granite Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Iron Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Platinum Golem Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Pyreal Golem Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Glacial Golem Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Gold Golem Heart]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Infused Blood Golem Heart]]}SetState{Make-Keyrings}</Action_x0020_Data>
+    <State>Make-Keyrings</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Burning Sands Golem Heart;0}ItemCountLE{Coral Heart;0}ItemCountLE{Black Coral Heart;0}ItemCountLE{Diamond Heart;0}ItemCountLE{Granite Heart;0}ItemCountLE{Iron Heart;0}ItemCountLE{Platinum Golem Heart;0}ItemCountLE{Pyreal Golem Heart;0}ItemCountLE{Glacial Golem Heart;0}ItemCountLE{Gold Golem Heart;0}ItemCountLE{Infused Blood Golem Heart;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-Keyrings</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-Keys</Action_x0020_Data>
+    <State>Make-Keys</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Mangled Dark Key;1}ItemCountGE{Twisted Dark Key;1}ItemCountGE{Virindi Singularity Key;1}ItemCountGE{Virindi Directive Key;1}ItemCountGE{Virindi Master Key;1}ItemCountGE{Broken Black Marrow Key;1}ItemCountGE{Misshapen Bone Fragment;1}ItemCountGE{Shattered Mana Forge Key;1}ItemCountGE{Shattered Legendary Key;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Mangled Dark Key]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Twisted Dark Key]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Virindi Singularity Key]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Virindi Directive Key]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Virindi Master Key]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Broken Black Marrow Key]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Misshapen Bone Fragment]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Shattered Mana Forge Key]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Intricate Carving Tool], wobjectfindininventorybyname[Shattered Legendary Key]]}SetState{Make-Keys}</Action_x0020_Data>
+    <State>Make-Keys</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Mangled Dark Key;0}ItemCountGE{Twisted Dark Key;0}ItemCountGE{Virindi Singularity Key;0}ItemCountGE{Virindi Directive Key;0}ItemCountGE{Virindi Master Key;0}ItemCountGE{Broken Black Marrow Key;0}ItemCountGE{Misshapen Bone Fragment;0}ItemCountGE{Shattered Mana Forge Key;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-Keys</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ManaInfusion</Action_x0020_Data>
+    <State>Make-ManaInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Gypsum;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Gypsum]]}SetState{Make-ManaInfusion}</Action_x0020_Data>
+    <State>Make-ManaInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Mana Infusion;1}Expression{istrue[getvar[eye]]}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Eye Dropper], wobjectfindininventorybyname[Concentrated Mana Infusion]]}SetState{Make-ManaInfusion}</Action_x0020_Data>
+    <State>Make-ManaInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountLE: {Concentrated Mana Infusion;0}ItemCountLE: {Eye Dropper;0}}Any{ItemCountLE: {Gypsum;0}ItemCountLE: {Alembic;0}}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ManaInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ManaOil</Action_x0020_Data>
+    <State>Make-ManaOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Mana Infusion;1}ItemCountGE{Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Aqua Incanta], wobjectfindininventorybyname[Mana Infusion]]}SetState{Make-ManaOil}</Action_x0020_Data>
+    <State>Make-ManaOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Mana Oil;1}Expression{istrue[getvar[eye]]}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Eye Dropper], wobjectfindininventorybyname[Concentrated Mana Oil]]}SetState{Make-ManaOil}</Action_x0020_Data>
+    <State>Make-ManaOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountLE: {Mana Infusion;0}ItemCountLE: {Aqua Incanta;0}}Any{ItemCountLE: {Concentrated Mana Oil;0}ItemCountLE: {Eye Dropper;0}}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ManaOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-PerfectDiamondInfusedIngot</Action_x0020_Data>
+    <State>Make-PerfectDiamondInfusedIngot</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Thick Diamond Oil;1}ItemCountGE{Quality Pyreal Ingot;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Thick Diamond Oil], wobjectfindininventorybyname[Quality Pyreal Ingot]]}SetState{Make-PerfectDiamondInfusedIngot}</Action_x0020_Data>
+    <State>Make-PerfectDiamondInfusedIngot</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Thick Diamond Oil;0}ItemCountLE{Quality Pyreal Ingot;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-PerfectDiamondInfusedIngot</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ChatCommand</Action_x0020_Type>
+    <Condition_x0020_Data>Pyreal Nugget;2</Condition_x0020_Data>
+    <Action_x0020_Data>/mt useip Pyreal Nugget on Pyreal Nugget</Action_x0020_Data>
+    <State>Make-PyrealBar</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Pyreal Nugget;1</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-PyrealBar</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>Make-PyrealBar</Action_x0020_Data>
+    <State>Make-PyrealBar</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountGE</Condition_x0020_Type>
+    <Action_x0020_Type>ChatCommand</Action_x0020_Type>
+    <Condition_x0020_Data>Pyreal Bar;2</Condition_x0020_Data>
+    <Action_x0020_Data>/mt useip Pyreal Bar on Pyreal Bar</Action_x0020_Data>
+    <State>Make-PyrealIngot</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>ItemCountLE</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Pyreal Bar;1</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-PyrealIngot</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>Make-PyrealIngot</Action_x0020_Data>
+    <State>Make-PyrealIngot</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Pyreal Mote;2}ItemCountGE{Pyreal Sliver;2}</Condition_x0020_Data>
+    <Action_x0020_Data>ChatCommand{/mt useip Mote on Mote}ChatCommand{/mt useip Pyreal Sliver on Pyreal Sliver}</Action_x0020_Data>
+    <State>Make-PyrealSliver/Nugget</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Pyreal Mote;1}ItemCountLE{Pyreal Sliver;1}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-PyrealSliver/Nugget</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>Make-PyrealSliver/Nugget</Action_x0020_Data>
+    <State>Make-PyrealSliver/Nugget</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-RoastedBarley</Action_x0020_Data>
+    <State>Make-RoastedBarley</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Plain Barley;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Baking Pan], wobjectfindininventorybyname[Plain Barley]]}SetState{Make-RoastedBarley}</Action_x0020_Data>
+    <State>Make-RoastedBarley</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Plain Barley;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-RoastedBarley</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-RoastedBeans</Action_x0020_Data>
+    <State>Make-RoastedBeans</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Brown Beans;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Baking Pan], wobjectfindininventorybyname[Brown Beans]]}SetState{Make-RoastedBeans}</Action_x0020_Data>
+    <State>Make-RoastedBeans</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Brown Beans;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-RoastedBeans</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-SimpleDriedHealthRations</Action_x0020_Data>
+    <State>Make-SimpleDriedHealthRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Simple Dried Rations;1}ItemCountGE{Hot Sauce;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Hot Sauce], wobjectfindininventorybyname[Simple Dried Rations]]}SetState{Make-SimpleDriedHealthRations}</Action_x0020_Data>
+    <State>Make-SimpleDriedHealthRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Simple Dried Rations;0}ItemCountLE{Hot Sauce;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-SimpleDriedHealthRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-SimpleDriedManaRations</Action_x0020_Data>
+    <State>Make-SimpleDriedManaRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Simple Dried Rations;1}ItemCountGE{Cinnamon;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Cinnamon], wobjectfindininventorybyname[Simple Dried Rations]]}SetState{Make-SimpleDriedManaRations}</Action_x0020_Data>
+    <State>Make-SimpleDriedManaRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Simple Dried Rations;0}ItemCountLE{Cinnamon;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-SimpleDriedManaRations</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>SetVTOption</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>autostack;false</Action_x0020_Data>
+    <State>Make-StrongChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Chorizite Oil;2}SecondsInStateGE{3}</Condition_x0020_Data>
+    <Action_x0020_Data>ChatCommand{/mt use Chorizite Oil on Chorizite Oil}SetState{Make-ConcChoriziteOil}</Action_x0020_Data>
+    <State>Make-StrongChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Chorizite Oil;1}SecondsInStateGE{4}</Condition_x0020_Data>
+    <Action_x0020_Data>Make-ConcChoriziteOil</Action_x0020_Data>
+    <State>Make-StrongChoriziteOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-SweetWort</Action_x0020_Data>
+    <State>Make-SweetWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Plain Barley;1}ItemCountGE{Full Brew Kettle;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Plain Barley], wobjectfindininventorybyname[Full Brew Kettle]]}SetState{Make-SweetWort}</Action_x0020_Data>
+    <State>Make-SweetWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Plain Barley;0}ItemCountLE{Sweet Wort;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-SweetWort</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-ThickDiamondOil</Action_x0020_Data>
+    <State>Make-ThickDiamondOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Decanter of Essence;1}ItemCountGE{Diamond Powder;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Decanter of Essence], wobjectfindininventorybyname[Diamond Powder]]}SetState{Make-ThickDiamondOil}</Action_x0020_Data>
+    <State>Make-ThickDiamondOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Decanter of Essence;0}ItemCountLE{Diamond Powder;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-ThickDiamondOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-TradeHealthElixer</Action_x0020_Data>
+    <State>Make-TradeHealthElixer</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Health Infusion;1}ItemCountGE{Potion of Healing;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Health Infusion], wobjectfindininventorybyname[Potion of Healing]]}SetState{Make-TradeHealthElixer}</Action_x0020_Data>
+    <State>Make-TradeHealthElixer</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Health Infusion;0}ItemCountLE{Potion of Healing;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-TradeHealthElixer</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-TradeManaElixer</Action_x0020_Data>
+    <State>Make-TradeManaElixer</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Mana Infusion;1}ItemCountGE{Mana Potion;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Mana Infusion], wobjectfindininventorybyname[Mana Potion]]}SetState{Make-TradeManaElixer}</Action_x0020_Data>
+    <State>Make-TradeManaElixer</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Mana Infusion;0}ItemCountLE{Mana Potion;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-TradeManaElixer</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-VialofDye</Action_x0020_Data>
+    <State>Make-VialofDye</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountGE: {Crushed Argenory Plant;1}ItemCountGE: {Crushed Berimphur Plant;1}ItemCountGE: {Crushed Colban Plant;1}ItemCountGE: {Crushed Hennacin Plant;1}ItemCountGE: {Crushed Lapyan Plant;1}ItemCountGE: {Crushed Minalim Plant;1}ItemCountGE: {Crushed Relanim Plant;1}ItemCountGE: {Crushed Thananim Plant;1}ItemCountGE: {Crushed Verdalim Plant;1}}ItemCountGE{Neutral Balm;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Argenory Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Berimphur Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Colban Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Hennacin Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Lapyan Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Minalim Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Relanim Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Thananim Plant]]}ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Neutral Balm], wobjectfindininventorybyname[Crushed Verdalim Plant]]}SetState{Make-VialofDye}</Action_x0020_Data>
+    <State>Make-VialofDye</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>All{ItemCountLE: {Crushed Argenory Plant;0}ItemCountLE: {Crushed Berimphur Plant;0}ItemCountLE: {Crushed Colban Plant;0}ItemCountLE: {Crushed Hennacin Plant;0}ItemCountLE: {Crushed Lapyan Plant;0}ItemCountLE: {Crushed Minalim Plant;0}ItemCountLE: {Crushed Relanim Plant;0}ItemCountLE: {Crushed Thananim Plant;0}ItemCountLE: {Crushed Verdalim Plant;0}}ItemCountLE{Neutral Balm;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-VialofDye</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-VictualInfusion</Action_x0020_Data>
+    <State>Make-VictualInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Realgar;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Alembic], wobjectfindininventorybyname[Realgar]]}SetState{Make-VictualInfusion}</Action_x0020_Data>
+    <State>Make-VictualInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Victual Infusion;1}Expression{istrue[getvar[eye]]}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Eye Dropper], wobjectfindininventorybyname[Concentrated Victual Infusion]]}SetState{Make-VictualInfusion}</Action_x0020_Data>
+    <State>Make-VictualInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountLE: {Realgar;0}ItemCountLE: {Alembic;0}}Any{ItemCountLE: {Concentrated Victual Infusion;0}ItemCountLE: {Eye Dropper;0}}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-VictualInfusion</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-VictualOil</Action_x0020_Data>
+    <State>Make-VictualOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Victual Infusion;1}ItemCountGE{Aqua Incanta;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Aqua Incanta], wobjectfindininventorybyname[Victual Infusion]]}SetState{Make-VictualOil}</Action_x0020_Data>
+    <State>Make-VictualOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Victual Oil;1}Expression{istrue[getvar[eye]]}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Eye Dropper], wobjectfindininventorybyname[Concentrated Victual Oil]]}SetState{Make-VictualOil}</Action_x0020_Data>
+    <State>Make-VictualOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>Any{ItemCountLE: {Victual Infusion;0}ItemCountLE: {Aqua Incanta;0}}Any{ItemCountLE: {Concentrated Victual Oil;0}ItemCountLE: {Eye Dropper;0}}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-VictualOil</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyAcidArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyAcidArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Acid Oil;1}ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Acid Oil], wobjectfindininventorybyname[Wrapped Bundle of Deadly Arrowheads]]}SetState{Make-WrapDeadlyAcidArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyAcidArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Acid Oil;0}ItemCountLE{Wrapped Bundle of Deadly Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyAcidArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyArmorPiercingArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyArmorPiercingArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Armor Piercing Arrowheads;1}ItemCountGE{Concentrated Bloodhunter Oil;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodhunter Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Armor Piercing Arrowheads]]}SetState{Make-WrapDeadlyArmorPiercingArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyArmorPiercingArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Greater Armor Piercing Arrowheads;0}ItemCountLE{Concentrated Bloodhunter Oil;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyArmorPiercingArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Bloodhunter Oil;1}ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodhunter Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Arrowheads]]}SetState{Make-WrapDeadlyArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Bloodhunter Oil;0}ItemCountLE{Wrapped Bundle of Greater Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyBarbedArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyBarbedArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Barbed Fletching Tool], wobjectfindininventorybyname[Wrapped Bundle of Deadly Arrowheads]]}SetState{Make-WrapDeadlyBarbedArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyBarbedArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Deadly Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyBarbedArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyBluntArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyBluntArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Blunt Arrowheads;1}ItemCountGE{Concentrated Bloodhunter Oil;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodhunter Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Blunt Arrowheads]]}SetState{Make-WrapDeadlyBluntArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyBluntArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Greater Blunt Arrowheads;0}ItemCountLE{Concentrated Bloodhunter Oil;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyBluntArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyChoriziteArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyChoriziteArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Chorizite Fletching Tool], wobjectfindininventorybyname[Wrapped Bundle of Deadly Arrowheads]]}SetState{Make-WrapDeadlyChoriziteArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyChoriziteArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Deadly Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyChoriziteArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyFireArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyFireArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Fire Oil;1}ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Fire Oil], wobjectfindininventorybyname[Wrapped Bundle of Deadly Arrowheads]]}SetState{Make-WrapDeadlyFireArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyFireArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Fire Oil;0}ItemCountLE{Wrapped Bundle of Deadly Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyFireArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyFrogCrotchArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyFrogCrotchArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Frog Crotch Arrowheads;1}ItemCountGE{Concentrated Bloodhunter Oil;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodhunter Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Frog Crotch Arrowheads]]}SetState{Make-WrapDeadlyFrogCrotchArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyFrogCrotchArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Greater Frog Crotch Arrowheads;0}ItemCountLE{Concentrated Bloodhunter Oil;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyFrogCrotchArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyFrostArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyFrostArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Frost Oil;1}ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Frost Oil], wobjectfindininventorybyname[Wrapped Bundle of Deadly Arrowheads]]}SetState{Make-WrapDeadlyFrostArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyFrostArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Frost Oil;0}ItemCountLE{Wrapped Bundle of Deadly Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyFrostArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapDeadlyLightningArrowheads</Action_x0020_Data>
+    <State>Make-WrapDeadlyLightningArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Lightning Oil;1}ItemCountGE{Wrapped Bundle of Deadly Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Lightning Oil], wobjectfindininventorybyname[Wrapped Bundle of Deadly Arrowheads]]}SetState{Make-WrapDeadlyLightningArrowheads}</Action_x0020_Data>
+    <State>Make-WrapDeadlyLightningArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Lightning Oil;0}ItemCountLE{Wrapped Bundle of Deadly Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapDeadlyLightningArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterAcidArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterAcidArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Acid Oil;1}ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Acid Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Arrowheads]]}SetState{Make-WrapGreaterAcidArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterAcidArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Acid Oil;0}ItemCountLE{Wrapped Bundle of Greater Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterAcidArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterArmorPiercingArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterArmorPiercingArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Armor Piercing Arrowheads;1}ItemCountGE{Concentrated Bloodseeker Oil;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodseeker Oil], wobjectfindininventorybyname[Wrapped Bundle of Armor Piercing Arrowheads]]}SetState{Make-WrapGreaterArmorPiercingArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterArmorPiercingArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Armor Piercing Arrowheads;0}ItemCountLE{Concentrated Bloodseeker Oil;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterArmorPiercingArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Bloodseeker Oil;1}ItemCountGE{Wrapped Bundle of Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodseeker Oil], wobjectfindininventorybyname[Wrapped Bundle of Arrowheads]]}SetState{Make-WrapGreaterArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Bloodseeker Oil;0}ItemCountLE{Wrapped Bundle of Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterBarbedArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterBarbedArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Barbed Fletching Tool], wobjectfindininventorybyname[Wrapped Bundle of Greater Arrowheads]]}SetState{Make-WrapGreaterBarbedArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterBarbedArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Greater Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterBarbedArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterBluntArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterBluntArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Blunt Arrowheads;1}ItemCountGE{Concentrated Bloodseeker Oil;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodseeker Oil], wobjectfindininventorybyname[Wrapped Bundle of Blunt Arrowheads]]}SetState{Make-WrapGreaterBluntArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterBluntArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Blunt Arrowheads;0}ItemCountLE{Concentrated Bloodseeker Oil;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterBluntArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterChoriziteArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterChoriziteArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Chorizite Fletching Tool], wobjectfindininventorybyname[Wrapped Bundle of Greater Arrowheads]]}SetState{Make-WrapGreaterChoriziteArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterChoriziteArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Greater Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterChoriziteArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterFireArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterFireArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Fire Oil;1}ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Fire Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Arrowheads]]}SetState{Make-WrapGreaterFireArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterFireArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Fire Oil;0}ItemCountLE{Wrapped Bundle of Greater Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterFireArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterFrogCrotchArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterFrogCrotchArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Wrapped Bundle of Frog Crotch Arrowheads;1}ItemCountGE{Concentrated Bloodseeker Oil;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Bloodseeker Oil], wobjectfindininventorybyname[Wrapped Bundle of Frog Crotch Arrowheads]]}SetState{Make-WrapGreaterFrogCrotchArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterFrogCrotchArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Wrapped Bundle of Frog Crotch Arrowheads;0}ItemCountLE{Concentrated Bloodseeker Oil;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterFrogCrotchArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterFrostArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterFrostArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Frost Oil;1}ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Frost Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Arrowheads]]}SetState{Make-WrapGreaterFrostArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterFrostArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Frost Oil;0}ItemCountLE{Wrapped Bundle of Greater Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterFrostArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>MainPackSlotsLE</Condition_x0020_Type>
+    <Action_x0020_Type>CallState</Action_x0020_Type>
+    <Condition_x0020_Data>2</Condition_x0020_Data>
+    <Action_x0020_Data>Stack;Make-WrapGreaterLightningArrowheads</Action_x0020_Data>
+    <State>Make-WrapGreaterLightningArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>All</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountGE{Concentrated Lightning Oil;1}ItemCountGE{Wrapped Bundle of Greater Arrowheads;1}</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{actiontryapplyitem[wobjectfindininventorybyname[Concentrated Lightning Oil], wobjectfindininventorybyname[Wrapped Bundle of Greater Arrowheads]]}SetState{Make-WrapGreaterLightningArrowheads}</Action_x0020_Data>
+    <State>Make-WrapGreaterLightningArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Any</Condition_x0020_Type>
+    <Action_x0020_Type>SetState</Action_x0020_Type>
+    <Condition_x0020_Data>ItemCountLE{Concentrated Lightning Oil;0}ItemCountLE{Wrapped Bundle of Greater Arrowheads;0}</Condition_x0020_Data>
+    <Action_x0020_Data>Check</Action_x0020_Data>
+    <State>Make-WrapGreaterLightningArrowheads</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Always</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>0</Condition_x0020_Data>
+    <Action_x0020_Data>ExpressionAct{setvar[StackWatch, stopwatchcreate[]]}ExpressionAct{stopwatchstart[getvar[StackWatch]]}SetVTOption{autostack;true}</Action_x0020_Data>
+    <State>Stack</State>
+  </table>
+  <table>
+    <Condition_x0020_Type>Expression</Condition_x0020_Type>
+    <Action_x0020_Type>Multiple</Action_x0020_Type>
+    <Condition_x0020_Data>stopwatchelapsedseconds[getvar[StackWatch]]&gt;=getvar[Stack Seconds]</Condition_x0020_Data>
+    <Action_x0020_Data>SetVTOption{autostack;false}ReturnFromCall{0}</Action_x0020_Data>
+    <State>Stack</State>
+  </table>
+</NewDataSet>
